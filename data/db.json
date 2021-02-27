@@ -1,0 +1,9 @@
+{
+    "jobs":[
+        {"title":"User Stories", "id": 1, "details": "Profile users and create user experience stories"},
+        {"title":"Content layout", "id": 2, "details": "Create wireframes for the content in each view"},
+        {"title":"Interaction Design", "id": 3, "details": "Identify User interaction and interactive feedback"},
+        {"title":"Functional Design", "id": 4, "details": "Identify and map workflows and create logic flow"}
+        
+    ]
+}
