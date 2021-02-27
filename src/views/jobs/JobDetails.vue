@@ -1,8 +1,13 @@
 <template>
     <h1>Job details Page</h1>
-    <h2>Title: {{ job.title }}</h2>
-    <h2>Id: {{ job.id }}</h2>
-    <h2>Details: {{ job.details }}</h2>
+    <div v-if="job">
+        <h2>{{ job.title }}</h2>
+        <h2>Id: {{ job.id }}</h2>
+        <h2>{{ job.details }}</h2>
+    </div>
+    <div v-else>
+        <h1>Content is loading...</h1>
+    </div>
 </template>
 
 <script>
@@ -11,7 +16,7 @@ export default {
     
     data(){
         return{
-            job: []
+            job: null
         }
     },
     mounted(){
